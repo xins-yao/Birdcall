@@ -16,6 +16,7 @@ win_length = n_fft
 
 ## Augment
 - Random Clip
+
   randomly cut 5s clip from audio and only keep clips with SNR higher than 1e-3
   ```
   def signal_noise_ratio(spec):
