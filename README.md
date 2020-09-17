@@ -49,7 +49,7 @@ win_length = n_fft
   
   add up to 4 noises with independent probabilities and scales in waveform
   
-  noises are extracted from training sample
+  noises were extracted from training samples
   ```
   def signal_noise_split(audio):
     S, _ = spectrum._spectrogram(y=audio, power=1.0, n_fft=2048, hop_length=512, win_length=2048)
@@ -108,6 +108,9 @@ win_length = n_fft
 ## Post-Process
 
 if model gets a confident prediction of any bird, then lower threshold for this bird in the same audio file
+
 - use thr_median as initial threshold
+
 - use thr_high for confident prediction
+
 - if any bird with probability higher than thr_high in any clip, lower threshold to thr_low for this specific bird in the same audio file
