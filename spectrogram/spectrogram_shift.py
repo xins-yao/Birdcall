@@ -4,6 +4,7 @@
 !pip install git+https://github.com/rabitt/pysox.git
 import sox
 
+
 # === lib
 import os
 import gc
@@ -116,7 +117,14 @@ def worker(args):
     
     # transformer
     tfm = sox.Transformer()
-    tfm.pitch(10)
+    # pitch-up / pitch-down
+    # tfm.pitch(10)
+    # treble-up / treble-down
+    # tfm.treble(20)
+    # bass-up / bass-down
+    # tfm.bass(20)
+    # fade-in / fade-out
+    # tfm.fade(fade_in_len=2, fade_out_len=2)
    
     output = []
     output_idx = []
