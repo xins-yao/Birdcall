@@ -164,7 +164,7 @@ def worker(args):
     print('segment {} complete'.format(seg))
     
  
-# multi-process
+# === multi-process
 n_thread = mp.cpu_count()
 pool = mp.Pool(n_thread)
 
